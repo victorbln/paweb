@@ -1,0 +1,109 @@
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #343a40;
+  --header-footer-bg-color: #343a40;
+  --header-footer-text-color: #ffffff;
+  --common-padding: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--header-footer-bg-color);
+  color: var(--header-footer-text-color);
+  padding: var(--common-padding);
+}
+.profile_image{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+main {
+  padding: var(--common-padding);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page_wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.about {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-pic, .hobby-details {
+  flex: 1;
+}
+
+.profile-pic {
+  flex: 0 0 10%;
+  border-right: 2px solid var(--text-color);
+  padding-right: var(--common-padding);
+  box-sizing: border-box;
+}
+
+.hobby-details {
+  flex: 1;
+  padding: var(--common-padding);
+  background-color: #e9ecef; /* a lighter shade of gray */
+  color: var(--text-color);
+  margin-left: var(--common-padding);
+  box-sizing: border-box;
+}
+.hobbies, .hobbies ul {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  text-align:start;
+  margin: 0;
+  padding: 0;
+}
+.hobbies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+.hobbies ul {
+  list-style: none;
+}
+
+.hobbies ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.hobbies ul li:before {
+  content: "";
+  display: inline-block;
+  width: 2vw;
+  height: 2vh;
+  background-image: url('pngegg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  margin-left: 0.5rem;
+}
